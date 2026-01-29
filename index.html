@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Rose Day 🌹</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  margin:0;
+  height:100vh;
+  background: linear-gradient(135deg,#ffd6e8,#e0c3fc,#ffe5f1);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+}
+
+/* floating hearts */
+.heart{
+  position:absolute;
+  font-size:18px;
+  animation: floatUp 6s linear infinite;
+  opacity:0.7;
+}
+@keyframes floatUp{
+  0%{transform:translateY(100vh);opacity:0;}
+  20%{opacity:1;}
+  100%{transform:translateY(-10vh);opacity:0;}
+}
+
+.container{
+  width:92%;
+  max-width:420px;
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(14px);
+  border-radius:28px;
+  padding:28px;
+  text-align:center;
+  box-shadow:0 25px 50px rgba(0,0,0,0.2);
+  animation: popIn 1s ease;
+}
+
+@keyframes popIn{
+  from{opacity:0;transform:scale(0.9);}
+  to{opacity:1;transform:scale(1);}
+}
+
+.rose{
+  font-size:95px;
+  filter: drop-shadow(0 0 18px #ff4d6d);
+  animation: floatRose 3s ease-in-out infinite;
+}
+
+@keyframes floatRose{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-15px);}
+}
+
+.text{
+  margin-top:16px;
+  font-size:14.5px;
+  line-height:1.6;
+  color:#4a004e;
+}
+
+.text b{
+  font-size:18px;
+}
+
+.buttons{
+  margin-top:22px;
+  display:flex;
+  justify-content:space-between;
+}
+
+button{
+  border:none;
+  padding:12px 18px;
+  border-radius:30px;
+  font-size:14px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.accept{
+  background: linear-gradient(135deg,#ff4d6d,#ff85a1);
+  color:white;
+  box-shadow:0 6px 18px rgba(255,77,109,0.5);
+}
+.accept:hover{transform:scale(1.08);}
+
+.throw{
+  background: linear-gradient(135deg,#adb5bd,#dee
